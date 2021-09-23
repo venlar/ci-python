@@ -23,3 +23,6 @@ jobs:
           command: |
             . venv/bin/activate
             pytest -v --cov=calculator
+            
+      - store_test_results:
+          path: test-results
